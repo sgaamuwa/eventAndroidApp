@@ -21,6 +21,8 @@ public class Event {
     private User creator;
     private EventStatus eventStatus;
     private List<User> participants;
+    private Date createdAt;
+    private Date updatedAt;
 
     public Event(){}
 
@@ -112,5 +114,13 @@ public class Event {
 
     public void setParticipants(List<User> participants) {
         this.participants = participants;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
     }
 }

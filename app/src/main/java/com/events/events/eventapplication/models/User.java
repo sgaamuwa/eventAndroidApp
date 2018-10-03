@@ -5,14 +5,16 @@ package com.events.events.eventapplication.models;
  */
 
 public class User {
-    private int id;
+    private int userId;
     private String firstName;
     private String lastName;
     private String username;
     private String email;
 
+    public User(){}
+
     public int getId() {
-        return id;
+        return userId;
     }
 
     public String getFirstName() {
