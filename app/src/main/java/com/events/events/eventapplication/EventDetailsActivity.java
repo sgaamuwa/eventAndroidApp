@@ -6,7 +6,6 @@ import android.databinding.DataBindingUtil;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.events.events.eventapplication.databinding.ActivityEventDetailsBinding;
 import com.events.events.eventapplication.models.Event;
@@ -17,8 +16,6 @@ public class EventDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ActivityEventDetailsBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_event_details);
-//        Event event = new Event("beach", "Entebbe", "things about to go down");
-
 
         EventDetailsViewModel eventDetailsViewModel = ViewModelProviders.of(this).get(EventDetailsViewModel.class);
         eventDetailsViewModel.getEvent(Integer.parseInt(getIntent().getStringExtra("eventId"))).observe(this, new Observer<Event>() {

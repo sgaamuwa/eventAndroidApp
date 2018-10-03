@@ -21,11 +21,11 @@ public class EventDetailsViewModel extends ViewModel {
     }
 
     public void loadEvent(int eventId){
-        EventAsyncTask eventAsyncTask = new EventAsyncTask();
+        EventDetailsAsyncTask eventAsyncTask = new EventDetailsAsyncTask();
         eventAsyncTask.execute(eventId);
     }
 
-    private class EventAsyncTask extends AsyncTask<Integer, Void, Event> {
+    private class EventDetailsAsyncTask extends AsyncTask<Integer, Void, Event> {
         @Override
         protected Event doInBackground(Integer... eventId) {
             return ApiCalls.getEvent(eventId[0]);

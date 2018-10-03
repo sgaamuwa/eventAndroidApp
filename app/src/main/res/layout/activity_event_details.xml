@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text='@{event.getEventId(), default=0009999}'/>
+            android:text='@{String.valueOf(event.getEventId()), default=0009999}'/>
         <TextView
             android:id="@+id/eventTitle"
             android:layout_width="match_parent"
