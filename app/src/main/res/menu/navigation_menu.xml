@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal">
+    <item android:id="@+id/events_tab"
+        android:title="@string/events_title"
+        android:icon="@android:drawable/ic_menu_my_calendar"/>
+    <item android:id="@+id/friends_tab"
+        android:title="@string/friends_title"
+        android:icon="@android:drawable/ic_menu_view"/>
+    <item android:id="@+id/places_tab"
+        android:title="@string/places_title"
+        android:icon="@android:drawable/ic_menu_mylocation"/>
+</menu>
