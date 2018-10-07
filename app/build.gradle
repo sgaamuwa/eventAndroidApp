@@ -67,4 +67,9 @@ dependencies {
     // optional - Test helpers
     androidTestImplementation "android.arch.navigation:navigation-testing:$nav_version"
     // use -ktx for Kotlin
+
+    // for the retrofit
+
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.4.0'
 }
